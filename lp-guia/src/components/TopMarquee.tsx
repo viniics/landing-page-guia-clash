@@ -1,4 +1,4 @@
-import React, { useRef, useState, useLayoutEffect } from "react";
+import { useRef, useState, useLayoutEffect } from "react";
 
 export default function TopMarquee() {
   const contentRef = useRef<HTMLDivElement | null>(null);

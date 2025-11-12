@@ -28,27 +28,31 @@ export default function ConteudoAbordado() {
 
   return (
     <section className="relative left-1/2 w-screen -translate-x-1/2 bg-gradient-to-b from-blue-900 to-blue-800 text-white py-16 mt-16">
-      <div className="max-w-5xl mx-auto px-6 text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-10 font-[Montserrat]">
-          CONTEÚDO ABORDADO
-        </h2>
+  <div className="max-w-5xl mx-auto px-6 text-center">
+    <h2 className="text-3xl sm:text-4xl font-bold mb-10 font-[Montserrat]">
+      CONTEÚDO ABORDADO
+    </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
-          {conteudos.map((item, index) => (
-            <div
-              key={index}
-              className="p-6 bg-blue-700/40 rounded-2xl shadow-md hover:scale-105 transition-transform duration-300"
-            >
-              <h3 className="text-xl font-[Montserrat] mb-3 text-cyan-400">
-                {item.titulo}
-              </h3>
-              <p className="text-gray-200">{item.descricao}</p>
-            </div>
-          ))}
+    <div className="inline-grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+      {conteudos.map((item, index) => (
+        <div
+          key={index}
+          className="p-6 bg-blue-700/40 rounded-2xl shadow-md hover:scale-105 transition-transform duration-300 flex flex-col items-center text-center"
+        >
+          <h3 className="text-xl font-[Montserrat] mb-3 text-cyan-400">
+            {item.titulo}
+          </h3>
+          <p className="text-gray-200">{item.descricao}</p>
         </div>
-      </div>
-      <br /><br />
-      <p>Tudo isso sem precisar mudar seu deck ou investir 1 centavo no jogo.</p>
-    </section>
+      ))}
+    </div>
+
+    {/* P final centralizado dentro do container */}
+    <p className="text-center mt-8">
+      Tudo isso sem precisar mudar seu deck ou investir 1 centavo no jogo.
+    </p>
+  </div>
+</section>
+
   );
 }

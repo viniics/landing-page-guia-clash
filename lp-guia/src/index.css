@@ -161,7 +161,7 @@ button:focus-visible {
     }
 
     p {
-      @apply text-sm leading-relaxed max-w-[90%];
+      @apply text-sm leading-relaxed max-w-[90%] mx-auto;
     }
   }
 }

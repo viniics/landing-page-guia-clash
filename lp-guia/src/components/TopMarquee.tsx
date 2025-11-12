@@ -4,7 +4,7 @@ export default function TopMarquee() {
   const contentRef = useRef<HTMLDivElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [isAnimating, setIsAnimating] = useState(true);
-  const [spacerHeight, setSpacerHeight] = useState(0);
+  const [, setSpacerHeight] = useState(0);
 
   useLayoutEffect(() => {
     if (containerRef.current) {

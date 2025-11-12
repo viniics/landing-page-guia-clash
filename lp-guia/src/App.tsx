@@ -8,11 +8,6 @@ import RotatingText from './components/RotatingText'
 import kings from './assets/unnamed.webp'
 import SegurancaGarantida from './components/SegurancaGarantida'
 import GlitchText from './components/GlitchText'
-import GradientText from './components/GradientText'
-import SpotlightCard from './components/SpotlightCard'
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import ReviewsIcon from '@mui/icons-material/Reviews';
-import CachedIcon from '@mui/icons-material/Cached';
 import FeedbackSection from './components/FeedbackSection'
 import Footer from './components/Footer'
 import BonusSection from './components/BonusSection'

@@ -122,13 +122,13 @@ function App() {
           </p>
         </SpotlightCard>
 
-        <SpotlightCard className="w-full max-w-lg custom-spotlight-card flex flex-col items-center text-center" spotlightColor='rgba(64, 121, 255, 1)'>
+        <SpotlightCard className="w-full max-w-lg custom-spotlight-card flex flex-col items-center text-center" spotlightColor='rgba(54, 2, 66, 1)'>
           <ReviewsIcon className="mb-2" />
           <h3 className="font-[Montserrat] font-bold text-center">ANÁLISE DE PARTIDAS</h3>
           <p className="text-xs text-center">Envie sua partida e receba feedback de todas suas jogadas.</p>
         </SpotlightCard>
 
-        <SpotlightCard className="w-full max-w-lg custom-spotlight-card flex flex-col items-center text-center" spotlightColor='rgba(64, 121, 255, 1)'>
+        <SpotlightCard className="w-full max-w-lg custom-spotlight-card flex flex-col items-center text-center" spotlightColor='rgba(64, 255, 236, 1)'>
           <CachedIcon className="mb-2" />
           <h3 className="font-[Montserrat] font-bold text-center">ATUALIZAÇÕES GRATUITAS DO EBOOK</h3>
           <p className="text-xs text-center">

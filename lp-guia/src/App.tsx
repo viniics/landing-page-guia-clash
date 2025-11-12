@@ -9,6 +9,10 @@ import kings from './assets/unnamed.webp'
 import SegurancaGarantida from './components/SegurancaGarantida'
 import GlitchText from './components/GlitchText'
 import GradientText from './components/GradientText'
+import SpotlightCard from './components/SpotlightCard'
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import ReviewsIcon from '@mui/icons-material/Reviews';
+import CachedIcon from '@mui/icons-material/Cached';
 
 function App() {
   const handleAnimationComplete = () => {
@@ -72,23 +76,48 @@ function App() {
       <br></br>
 
 
-<div className="flex justify-center">
-      <BlurText
-        text="BÔNUS"
-        delay={150}
-        animateBy="words"
-        direction="top"
-        onAnimationComplete={handleAnimationComplete}
-        className="text-9xl mb-8"
-      /></div>
+      <div className="flex justify-center">
+        <BlurText
+          text="BÔNUS"
+          delay={150}
+          animateBy="words"
+          direction="top"
+          onAnimationComplete={handleAnimationComplete}
+          className="text-9xl mb-8"
+        /></div>
       <GradientText
         colors={["#9640ffff", "#4079ff", "#9640ffff", "#4079ff", "#9640ffff"]}
         animationSpeed={3}
         showBorder={false}
-        className="custom-class font-[Montserrat] text-4xl"
-      >AO ADQUIRIR O EBOOK, CONTE TAMBÉM COM ESSES BENEFÍCIOS TOTALMENTE GRÁTIS</GradientText>
-      <SegurancaGarantida></SegurancaGarantida>
+        className="custom-class font-[Montserrat] text-4xl font-bold"
+      >AO ADQUIRIR O EBOOK,<br></br>GANHE TOTALMENTE GRÁTIS</GradientText>
+      <div className="flex flex-col items-center space-y-6">
+        <br></br>
+        <SpotlightCard className="w-full max-w-lg custom-spotlight-card" spotlightColor='rgba(64, 121, 255, 1)'>
+          <WhatsAppIcon />
+          <h3 className="font-[Montserrat] font-bold">ACESSO À COMUNIDADE EXCLUSIVA NO WHATSAPP</h3>
+          <p className="text-xs">
+            Compartilhe conhecimentos, experiências e dicas do jogo.<br />
+            Tire suas dúvidas rapidamente conosco.
+          </p>
+        </SpotlightCard>
+        <SpotlightCard className="w-full max-w-lg custom-spotlight-card" spotlightColor='rgba(64, 121, 255, 1)'>
+          <ReviewsIcon />
+          <h3 className="font-[Montserrat] font-bold">ANÁLISE DE PARTIDAS</h3>
+          <p className="text-xs">Envie sua partida e receba feedback de todas suas jogadas.</p>
+        </SpotlightCard>
 
+        <SpotlightCard className="w-full max-w-lg custom-spotlight-card" spotlightColor='rgba(64, 121, 255, 1)'>
+          <CachedIcon />
+          <h3 className="font-[Montserrat] font-bold">ATUALIZAÇÕES GRATUITAS DO EBOOK</h3>
+          <p className="text-xs">
+            Pague uma vez, tenha o material atualizado PARA SEMPRE.<br />
+            Desfrute de um conteúdo atualizado a cada atualização.
+          </p>
+        </SpotlightCard>
+      </div>
+      <SegurancaGarantida></SegurancaGarantida>
+      <br></br><br></br><br></br>
       <TrueFocus
         sentence="FOQUE NO IMPORTANTE"
         manualMode={false}

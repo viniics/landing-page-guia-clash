@@ -27,24 +27,21 @@ function App() {
         <div className='flex justify-center scale-95'>
           <BlurText
             text={"GUIA "}
-            delay={150}
-            animateBy="words"
+            delay={25}
             direction="top"
             onAnimationComplete={handleAnimationComplete}
             className="text-4xl" /* Remove a margem de baixo */
           />
           <BlurText
             text={"DO "}
-            delay={170}
-            animateBy="words"
-            direction="top"
+            delay={250}
+            direction="bottom"
             onAnimationComplete={handleAnimationComplete}
             className="text-4xl" /* Adiciona a margem aqui */
           />
           <BlurText
             text={"CLASH"}
-            delay={1220}
-            animateBy="words"
+            delay={350}
             direction="top"
             onAnimationComplete={handleAnimationComplete}
             className="text-4xl" /* Adiciona a margem aqui */

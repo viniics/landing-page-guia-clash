@@ -4,6 +4,11 @@ import TopMarquee from './components/TopMarquee'
 import BlurText from './components/BlurText'
 import capaImg from './assets/CAPA MEGA VS PEKKA.png'
 import ConteudoAbordado from './components/ConteudoAbordado'
+import RotatingText from './components/RotatingText'
+import kings from './assets/unnamed.webp'
+import SegurancaGarantida from './components/SegurancaGarantida'
+import GlitchText from './components/GlitchText'
+import GradientText from './components/GradientText'
 
 function App() {
   const handleAnimationComplete = () => {
@@ -34,18 +39,55 @@ function App() {
           Estratégias comprovadas para avançar no Clash Royale sem investir nada no jogo.<br />
           Melhore suas habilidades e aprenda a criar decks próprios que irão te levar para a arena máxima.
         </p>
-
-        <a
-          href="https://pay.hotmart.com/N102765722H"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block mt-6 px-8 py-3 text-lg font-semibold text-white font-[Montserrat] hover:text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300"
-        >
-          COMPRE AGORA
-        </a>
       </main>
 
       <ConteudoAbordado />
+      <br></br><br></br><br></br><br></br><br></br>
+      <RotatingText
+        texts={['NOSSA', 'EQUIPE']}
+        mainClassName="flex justify-center overflow-hidden rounded-lg px-2 py-0.5 sm:px-2 sm:py-1 md:px-3 md:py-2 font-[Montserrat] text-9xl font-bold text-white" staggerFrom={"last"}
+        initial={{ y: "100%" }}
+        animate={{ y: 0 }}
+        exit={{ y: "-120%" }}
+        staggerDuration={0.025}
+        splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+        transition={{ type: "spring", damping: 30, stiffness: 400 }}
+        rotationInterval={2000}
+      />
+
+      <br></br>
+      <br></br>
+      <div className="flex justify-center">
+        <img
+          src={kings}
+          alt="Reis do Clash Royale"
+          className="w-1/4 sm:max-w-sm md:max-w-md rounded-2xl shadow-lg mb-6 mx-auto"
+        />
+      </div>
+      <p className="read-the-docs mt-6 text-white">Não somos teóricos. Somos 2 jogadores veteranos com mais de 9 anos de experiência cada. Desde 2016, estamos competindo e figurando no topo do ranking global.<br></br><br></br>
+        Este eBook foi criado para ser um manual de FATOS, não de opiniões. Para garantir isso, cada estratégia, cada tática de posicionamento e cada dica de elixir que você vai ler foi rigorosamente testada, debatida e aprovada por nós dois.<br></br><br></br>
+        O que ensinamos aqui não é SORTE. É o MÉTODO exato que usamos para dominar o jogo.</p>
+      <br></br>
+      <SegurancaGarantida></SegurancaGarantida>
+      <br></br>
+
+
+<div className="flex justify-center">
+      <BlurText
+        text="BÔNUS"
+        delay={150}
+        animateBy="words"
+        direction="top"
+        onAnimationComplete={handleAnimationComplete}
+        className="text-9xl mb-8"
+      /></div>
+      <GradientText
+        colors={["#9640ffff", "#4079ff", "#9640ffff", "#4079ff", "#9640ffff"]}
+        animationSpeed={3}
+        showBorder={false}
+        className="custom-class font-[Montserrat] text-4xl"
+      >AO ADQUIRIR O EBOOK, CONTE TAMBÉM COM ESSES BENEFÍCIOS TOTALMENTE GRÁTIS</GradientText>
+      <SegurancaGarantida></SegurancaGarantida>
 
       <TrueFocus
         sentence="FOQUE NO IMPORTANTE"
@@ -56,8 +98,21 @@ function App() {
         pauseBetweenAnimations={1}
       />
 
+
+
       <p className="read-the-docs mt-6">
         Sem enrolação. Filtramos o que realmente funciona e entregamos o método certo para evoluir no Clash.
+      </p>
+      <p className='text-grey'>Economize anos de conhecimento pagando apenas </p>
+      <GlitchText
+        speed={3}
+        enableShadows={true}
+        enableOnHover={true}
+        className='custom-class'
+      >R$ 17.99
+      </GlitchText>
+      <p className="read-the-docs mt-6">
+        Parcelado em 2x.
       </p>
     </>
   )

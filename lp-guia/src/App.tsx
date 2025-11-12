@@ -24,14 +24,32 @@ function App() {
       <TopMarquee />
 
       <main className="flex flex-col items-center text-center px-6 py-10">
-        <div className='flex justify-center'><BlurText
-          text={"GUIA DO CLASH"}
-          delay={150}
-          animateBy="words"
-          direction="top"
-          onAnimationComplete={handleAnimationComplete}
-          className="text-6xl mb-3 "
-        /></div>
+        <div className='flex justify-center scale-95'>
+          <BlurText
+            text={"GUIA "}
+            delay={150}
+            animateBy="words"
+            direction="top"
+            onAnimationComplete={handleAnimationComplete}
+            className="text-4xl" /* Remove a margem de baixo */
+          />
+          <BlurText
+            text={"DO "}
+            delay={170}
+            animateBy="words"
+            direction="top"
+            onAnimationComplete={handleAnimationComplete}
+            className="text-4xl" /* Adiciona a margem aqui */
+          />
+          <BlurText
+            text={"CLASH"}
+            delay={1220}
+            animateBy="words"
+            direction="top"
+            onAnimationComplete={handleAnimationComplete}
+            className="text-4xl" /* Adiciona a margem aqui */
+          />
+        </div>
 
 
         <br></br>
@@ -78,50 +96,50 @@ function App() {
 
 
       <div className="flex justify-center">
-  <BlurText
-    text="BÔNUS"
-    delay={150}
-    animateBy="words"
-    direction="top"
-    onAnimationComplete={handleAnimationComplete}
-    className="text-9xl mb-8 text-center"
-  />
-</div>
+        <BlurText
+          text="BÔNUS"
+          delay={150}
+          animateBy="words"
+          direction="top"
+          onAnimationComplete={handleAnimationComplete}
+          className="text-9xl mb-8 text-center"
+        />
+      </div>
 
-<GradientText
-  colors={["#9640ffff", "#4079ff", "#9640ffff", "#4079ff", "#9640ffff"]}
-  animationSpeed={3}
-  showBorder={false}
-  className="custom-class font-[Montserrat] text-2xl font-bold text-center"
->
-  AO ADQUIRIR O EBOOK<br />GANHE TOTALMENTE GRÁTIS
-</GradientText>
+      <GradientText
+        colors={["#9640ffff", "#4079ff", "#9640ffff", "#4079ff", "#9640ffff"]}
+        animationSpeed={3}
+        showBorder={false}
+        className="custom-class font-[Montserrat] text-2xl font-bold text-center"
+      >
+        AO ADQUIRIR O EBOOK<br />GANHE TOTALMENTE GRÁTIS
+      </GradientText>
 
-<div className="flex flex-col items-center space-y-6 mt-6">
-  <SpotlightCard className="w-full max-w-lg custom-spotlight-card flex flex-col items-center text-center" spotlightColor='rgba(64, 121, 255, 1)'>
-    <WhatsAppIcon className="mb-2" />
-    <h3 className="font-[Montserrat] font-bold text-center">ACESSO À COMUNIDADE EXCLUSIVA NO WHATSAPP</h3>
-    <p className="text-xs text-center">
-      Compartilhe conhecimentos, experiências e dicas do jogo.<br /><br></br>
-      Tire suas dúvidas rapidamente conosco.
-    </p>
-  </SpotlightCard>
+      <div className="flex flex-col items-center space-y-6 mt-6">
+        <SpotlightCard className="w-full max-w-lg custom-spotlight-card flex flex-col items-center text-center" spotlightColor='rgba(64, 121, 255, 1)'>
+          <WhatsAppIcon className="mb-2" />
+          <h3 className="font-[Montserrat] font-bold text-center">ACESSO À COMUNIDADE EXCLUSIVA NO WHATSAPP</h3>
+          <p className="text-xs text-center">
+            Compartilhe conhecimentos, experiências e dicas do jogo.<br /><br></br>
+            Tire suas dúvidas rapidamente conosco.
+          </p>
+        </SpotlightCard>
 
-  <SpotlightCard className="w-full max-w-lg custom-spotlight-card flex flex-col items-center text-center" spotlightColor='rgba(64, 121, 255, 1)'>
-    <ReviewsIcon className="mb-2" />
-    <h3 className="font-[Montserrat] font-bold text-center">ANÁLISE DE PARTIDAS</h3>
-    <p className="text-xs text-center">Envie sua partida e receba feedback de todas suas jogadas.</p>
-  </SpotlightCard>
+        <SpotlightCard className="w-full max-w-lg custom-spotlight-card flex flex-col items-center text-center" spotlightColor='rgba(64, 121, 255, 1)'>
+          <ReviewsIcon className="mb-2" />
+          <h3 className="font-[Montserrat] font-bold text-center">ANÁLISE DE PARTIDAS</h3>
+          <p className="text-xs text-center">Envie sua partida e receba feedback de todas suas jogadas.</p>
+        </SpotlightCard>
 
-  <SpotlightCard className="w-full max-w-lg custom-spotlight-card flex flex-col items-center text-center" spotlightColor='rgba(64, 121, 255, 1)'>
-    <CachedIcon className="mb-2" />
-    <h3 className="font-[Montserrat] font-bold text-center">ATUALIZAÇÕES GRATUITAS DO EBOOK</h3>
-    <p className="text-xs text-center">
-      Pague uma vez, tenha o material atualizado PARA SEMPRE.<br /><br></br>
-      Desfrute de um conteúdo atualizado a cada atualização.
-    </p>
-  </SpotlightCard>
-</div>
+        <SpotlightCard className="w-full max-w-lg custom-spotlight-card flex flex-col items-center text-center" spotlightColor='rgba(64, 121, 255, 1)'>
+          <CachedIcon className="mb-2" />
+          <h3 className="font-[Montserrat] font-bold text-center">ATUALIZAÇÕES GRATUITAS DO EBOOK</h3>
+          <p className="text-xs text-center">
+            Pague uma vez, tenha o material atualizado PARA SEMPRE.<br /><br></br>
+            Desfrute de um conteúdo atualizado a cada atualização.
+          </p>
+        </SpotlightCard>
+      </div>
 
       <SegurancaGarantida></SegurancaGarantida>
       <br></br><br></br><br></br>

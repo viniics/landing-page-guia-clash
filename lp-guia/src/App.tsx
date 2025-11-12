@@ -24,27 +24,27 @@ function App() {
       <TopMarquee />
 
       <main className="flex flex-col items-center text-center px-6 py-10">
-        <div className='flex justify-center scale-95'>
+        <div className='flex justify-center scale-90'>
           <BlurText
             text={"GUIA "}
             delay={25}
             direction="top"
             onAnimationComplete={handleAnimationComplete}
-            className="text-4xl" /* Remove a margem de baixo */
+            className="text-4xl"
           />
           <BlurText
             text={"DO "}
             delay={250}
             direction="bottom"
             onAnimationComplete={handleAnimationComplete}
-            className="text-4xl" /* Adiciona a margem aqui */
+            className="text-4xl"
           />
           <BlurText
             text={"CLASH"}
             delay={350}
             direction="top"
             onAnimationComplete={handleAnimationComplete}
-            className="text-4xl" /* Adiciona a margem aqui */
+            className="text-4xl"
           />
         </div>
 

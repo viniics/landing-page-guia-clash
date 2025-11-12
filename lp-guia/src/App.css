@@ -2,7 +2,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
 
@@ -44,4 +44,11 @@
 
 p {
   font-family: 'Montserrat', sans-serif;
+}
+body {
+  background:
+    linear-gradient(rgba(10, 10, 10, 0.85), rgba(17, 24, 39, 0.95)),
+    url('./assets/dark-mosaic.png') repeat center center fixed;
+  background-size: 400px auto;
+  color: white;
 }

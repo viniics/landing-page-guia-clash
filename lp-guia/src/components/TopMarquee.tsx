@@ -106,12 +106,6 @@ export default function TopMarquee() {
         </div>
       </div>
 
-      <div
-        style={{
-          height: spacerHeight,
-          transition: "height 0.3s ease",
-        }}
-      />
     </>
   );
 }

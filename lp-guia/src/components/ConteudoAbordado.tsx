@@ -46,8 +46,6 @@ export default function ConteudoAbordado() {
         </div>
       ))}
     </div>
-
-    {/* P final centralizado dentro do container */}
     <p className="text-center mt-8">
       Tudo isso sem precisar mudar seu deck ou investir 1 centavo no jogo.
     </p>

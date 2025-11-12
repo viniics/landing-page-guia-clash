@@ -13,6 +13,9 @@ import SpotlightCard from './components/SpotlightCard'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import ReviewsIcon from '@mui/icons-material/Reviews';
 import CachedIcon from '@mui/icons-material/Cached';
+import FeedbackSection from './components/FeedbackSection'
+import Footer from './components/Footer'
+import BonusSection from './components/BonusSection'
 
 function App() {
   const handleAnimationComplete = () => {
@@ -62,7 +65,7 @@ function App() {
       </main>
 
       <ConteudoAbordado />
-      <br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br>
       <RotatingText
         texts={['NOSSA', 'EQUIPE']}
         mainClassName="flex justify-center overflow-hidden rounded-lg px-2 py-0.5 sm:px-2 sm:py-1 md:px-3 md:py-2 font-[Montserrat] text-5xl font-bold text-white" staggerFrom={"last"}
@@ -89,57 +92,9 @@ function App() {
         O que ensinamos aqui não é SORTE. É o MÉTODO exato que usamos para dominar o jogo.</p>
       <br></br>
       <SegurancaGarantida></SegurancaGarantida>
-      <br></br>
-
-
-      <div className="flex justify-center">
-        <BlurText
-          text="BÔNUS"
-          delay={150}
-          animateBy="words"
-          direction="top"
-          onAnimationComplete={handleAnimationComplete}
-          className="text-9xl mb-8 text-center"
-        />
-      </div>
-
-      <GradientText
-        colors={["#9640ffff", "#4079ff", "#9640ffff", "#4079ff", "#9640ffff"]}
-        animationSpeed={3}
-        showBorder={false}
-        className="custom-class font-[Montserrat] text-2xl font-bold text-center"
-      >
-        AO ADQUIRIR O EBOOK<br />GANHE TOTALMENTE GRÁTIS
-      </GradientText>
-
-      <div className="flex flex-col items-center space-y-6 mt-6">
-        <SpotlightCard className="w-full max-w-lg custom-spotlight-card flex flex-col items-center text-center" spotlightColor='rgba(64, 121, 255, 1)'>
-          <WhatsAppIcon className="mb-2" />
-          <h3 className="font-[Montserrat] font-bold text-center">ACESSO À COMUNIDADE EXCLUSIVA NO WHATSAPP</h3>
-          <p className="text-xs text-center">
-            Compartilhe conhecimentos, experiências e dicas do jogo.<br /><br></br>
-            Tire suas dúvidas rapidamente conosco.
-          </p>
-        </SpotlightCard>
-
-        <SpotlightCard className="w-full max-w-lg custom-spotlight-card flex flex-col items-center text-center" spotlightColor='rgba(54, 2, 66, 1)'>
-          <ReviewsIcon className="mb-2" />
-          <h3 className="font-[Montserrat] font-bold text-center">ANÁLISE DE PARTIDAS</h3>
-          <p className="text-xs text-center">Envie sua partida e receba feedback de todas suas jogadas.</p>
-        </SpotlightCard>
-
-        <SpotlightCard className="w-full max-w-lg custom-spotlight-card flex flex-col items-center text-center" spotlightColor='rgba(64, 255, 236, 1)'>
-          <CachedIcon className="mb-2" />
-          <h3 className="font-[Montserrat] font-bold text-center">ATUALIZAÇÕES GRATUITAS DO EBOOK</h3>
-          <p className="text-xs text-center">
-            Pague uma vez, tenha o material atualizado PARA SEMPRE.<br /><br></br>
-            Desfrute de um conteúdo atualizado a cada atualização.
-          </p>
-        </SpotlightCard>
-      </div>
-
-      <SegurancaGarantida></SegurancaGarantida>
-      <br></br><br></br><br></br>
+      <BonusSection></BonusSection>
+      <FeedbackSection></FeedbackSection>
+      <br></br><br></br>
       <TrueFocus
         sentence="FOQUE NO IMPORTANTE"
         manualMode={false}
@@ -165,7 +120,9 @@ function App() {
       <p className="read-the-docs mt-6">
         Parcelado em 2x.
       </p>
+      <Footer></Footer>
     </>
+    
   )
 }
 

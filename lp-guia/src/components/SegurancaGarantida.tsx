@@ -1,20 +1,33 @@
+import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
+import PaidIcon from '@mui/icons-material/Paid';
+import LockIcon from '@mui/icons-material/Lock';
+import CheckBoxIcon from '@mui/icons-material/CheckBox';
+
 export default function SegurancaGarantida() {
   const garantias = [
     {
-      titulo: "🛡️ Plataforma Segura",
-      descricao: "Todas as transações são processadas pela Hotmart, a maior plataforma de vendas digitais do mundo.",
+      titulo: "Plataforma Segura",
+      descricao:
+        "Todas as transações são processadas pela Hotmart, a maior plataforma de vendas digitais do mundo.",
+      icon: <HealthAndSafetyIcon className="text-green-400 mr-2" />,
     },
     {
-      titulo: "💸 Reembolso Garantido",
-      descricao: "Se você não ficar satisfeito por qualquer motivo, pode pedir reembolso em até 7 dias sem burocracia.",
+      titulo: "Reembolso Garantido",
+      descricao:
+        "Se você não ficar satisfeito por qualquer motivo, pode pedir reembolso em até 7 dias sem burocracia.",
+        icon: <PaidIcon className="text-green-400 mr-2"/>
     },
     {
-      titulo: "🔒 Proteção de Dados",
-      descricao: "Suas informações estão seguras e nunca serão compartilhadas com terceiros.",
+      titulo: "Proteção de Dados",
+      descricao:
+        "Suas informações estão seguras e nunca serão compartilhadas com terceiros.",
+        icon:<LockIcon className="text-green-400 mr-2"/>
     },
     {
-      titulo: "✅ Confiança Total",
-      descricao: "Não precisamos aprovar nada: a Hotmart garante que sua compra é segura e transparente.",
+      titulo: "Confiança Total",
+      descricao:
+        "Não precisamos aprovar nada: a Hotmart garante que sua compra é segura e transparente.",
+        icon: <CheckBoxIcon className="text-green-400 mr-2"/>
     },
   ];
 
@@ -31,7 +44,8 @@ export default function SegurancaGarantida() {
               key={index}
               className="p-6 bg-blue-700/40 rounded-2xl shadow-md hover:scale-105 transition-transform duration-300"
             >
-              <h3 className="text-xl font-[Montserrat] mb-3 text-cyan-400">
+              <h3 className="flex items-center justify-center text-xl font-[Montserrat] mb-3 text-cyan-400">
+                {item.icon}
                 {item.titulo}
               </h3>
               <p className="text-gray-200">{item.descricao}</p>
@@ -43,7 +57,6 @@ export default function SegurancaGarantida() {
           Tudo isso garante que sua compra do eBook seja totalmente segura e sem riscos.
         </p>
 
-        {/* Botão estilizado com tons de azul e ciano */}
         <a
           href="https://pay.hotmart.com/N102765722H"
           target="_blank"

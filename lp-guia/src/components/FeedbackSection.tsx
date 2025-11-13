@@ -7,17 +7,14 @@ export default function FeedbackSection() {
   return (
     <section className="relative left-1/2 w-screen -translate-x-1/2 bg-gradient-to-b from-blue-900 to-blue-800 text-white py-16 mt-16">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        {/* Título */}
         <h2 className="text-3xl sm:text-4xl font-bold mb-6 font-[Montserrat]">
           DEPOIMENTOS DE QUEM TESTOU
         </h2>
 
-        {/* Subtítulo */}
         <p className="text-gray-300 mb-12 text-lg">
           Dezenas de jogadores já transformaram suas partidas com o nosso guia — confira depoimentos reais do nosso Instagram.
         </p>
 
-        {/* Cards */}
         <div
           className="
             flex flex-col items-center justify-center gap-10
@@ -28,47 +25,42 @@ export default function FeedbackSection() {
           <TiltedCard
             imageSrc={fdb1}
             altText="Feedback 2"
-            captionText="Estrategista em Ascensão"
             containerHeight="300px"
             containerWidth="300px"
             imageHeight="300px"
             imageWidth="300px"
             rotateAmplitude={2}
             scaleOnHover={1.05}
-            showMobileWarning={false}
-            showTooltip={true}
+
+            showTooltip={false}
           />
 
           <TiltedCard
             imageSrc={fdb2}
             altText="Feedback 2"
-            captionText="Estrategista em Ascensão"
             containerHeight="300px"
             containerWidth="300px"
             imageHeight="300px"
             imageWidth="300px"
             rotateAmplitude={2}
             scaleOnHover={1.05}
-            showMobileWarning={false}
-            showTooltip={true}
+
+            showTooltip={false}
           />
 
           <TiltedCard
             imageSrc={fdb3}
             altText="Feedback 3"
-            captionText="Vitórias Constantes"
+            captionText=""
             containerHeight="300px"
             containerWidth="300px"
             imageHeight="300px"
             imageWidth="300px"
             rotateAmplitude={2}
             scaleOnHover={1.05}
-            showMobileWarning={false}
-            showTooltip={true}
+            showTooltip={false}
           />
         </div>
-
-        {/* Botão final */}
         <a
           href="https://pay.hotmart.com/N102765722H"
           target="_blank"
@@ -78,7 +70,7 @@ export default function FeedbackSection() {
                      rounded-full shadow-lg hover:scale-105 hover:shadow-xl 
                      hover:from-cyan-400 hover:via-blue-400 hover:to-indigo-500 hover:text-white
                      transition-all duration-300"
-        >JUNTE-SE AOS VENÇEDORES
+        >JUNTE-SE AOS VENCEDORES
         </a>
       </div>
     </section>

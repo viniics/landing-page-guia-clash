@@ -11,6 +11,8 @@ import GlitchText from './components/GlitchText'
 import FeedbackSection from './components/FeedbackSection'
 import Footer from './components/Footer'
 import BonusSection from './components/BonusSection'
+import PerguntasFrequentes from './components/PerguntasFrequentes'
+import FinalSection from './components/FinalSection'
 
 function App() {
   const handleAnimationComplete = () => {
@@ -86,38 +88,15 @@ function App() {
         Este eBook foi criado para ser um manual de FATOS, não de opiniões. Para garantir isso, cada estratégia, cada tática de posicionamento e cada dica de elixir que você vai ler foi rigorosamente testada, debatida e aprovada por nós dois.<br></br><br></br>
         O que ensinamos aqui não é SORTE. É o MÉTODO exato que usamos para dominar o jogo.</p>
       <br></br>
-      <SegurancaGarantida></SegurancaGarantida>
-      <BonusSection></BonusSection>
-      <FeedbackSection></FeedbackSection>
-      <br></br><br></br>
-      <TrueFocus
-        sentence="FOQUE NO IMPORTANTE"
-        manualMode={false}
-        blurAmount={5}
-        borderColor="cyan"
-        animationDuration={2}
-        pauseBetweenAnimations={1}
-      />
-
-
-
-      <p className="read-the-docs mt-6">
-        Sem enrolação. Filtramos o que realmente funciona e entregamos o método certo para evoluir no Clash.
-      </p>
-      <p className='text-grey'>Economize anos de conhecimento pagando apenas </p>
-      <GlitchText
-        speed={3}
-        enableShadows={true}
-        enableOnHover={true}
-        className='custom-class'
-      >R$ 17.99
-      </GlitchText>
-      <p className="read-the-docs mt-6">
-        Parcelado em 2x.
-      </p>
+      <SegurancaGarantida/>
+      <BonusSection/>
+      <FeedbackSection/>
+      <br></br>
+      <FinalSection/>
+      <PerguntasFrequentes/>
       <Footer></Footer>
     </>
-    
+
   )
 }
 

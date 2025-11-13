@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import BonusSection from './components/BonusSection'
 import PerguntasFrequentes from './components/PerguntasFrequentes'
 import FinalSection from './components/FinalSection'
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const handleAnimationComplete = () => {
@@ -20,7 +21,7 @@ function App() {
   return (
     <>
       <TopMarquee />
-
+      <Analytics/>
       <main className="flex flex-col items-center text-center px-6 py-10">
         <div className='flex justify-center scale-90'>
           <BlurText

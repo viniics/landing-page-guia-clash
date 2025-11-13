@@ -35,9 +35,9 @@ export const PerguntasFrequentes = () => {
                         {faqs.map((item) => (
                             <div key={item.question}>
                                 <div className="flex max-w-sm flex-col items-center text-center">
-                                    <item.icon className="text-purple-400 w-10 h-10 md:w-12 md:h-12" />
+                                    <item.icon className="text-indigo-500 w-10 h-10 md:w-12 md:h-12" />
 
-                                    <dt className="mt-4 text-lg font-semibold text-blue-700">
+                                    <dt className="mt-4 text-lg font-semibold text-cyan-200">
                                         {item.question}
                                     </dt>
                                     <dd className="mt-1 text-md text-tertiary whitespace-pre-line">

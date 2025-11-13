@@ -103,6 +103,7 @@ function App() {
       <FeedbackSection />
       <br></br>
       <FinalSection />
+      <div className="w-full border-t border-white/20 my-16" />
       <PerguntasFrequentes />
       <Footer></Footer>
     </>

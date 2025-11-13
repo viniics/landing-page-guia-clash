@@ -57,6 +57,18 @@ function App() {
           Estratégias comprovadas para avançar no Clash Royale sem investir nada no jogo.<br /><br></br>
           Melhore suas habilidades e aprenda a criar decks próprios que irão te levar para a arena máxima.
         </p>
+        <div className="flex justify-center mt-8">
+          <a
+            href="https://pay.hotmart.com/N102765722H"
+            target="_blank"
+            className="px-12 py-4 text-lg font-extrabold font-[Montserrat] text-white 
+               rounded-full bg-gradient-to-r from-fuchsia-600 via-purple-700 to-blue-600
+               shadow-[0_0_20px_rgba(147,51,234,0.6)]
+               hover:scale-110 hover:text-white hover:shadow-[0_0_30px_rgba(59,130,246,0.8)]
+               transition-all duration-300 ease-out tracking-wide"
+          >COMPRE AQUI
+          </a>
+        </div>
       </main>
 
       <ConteudoAbordado />
@@ -86,12 +98,12 @@ function App() {
         Este eBook foi criado para ser um manual de FATOS, não de opiniões. Para garantir isso, cada estratégia, cada tática de posicionamento e cada dica de elixir que você vai ler foi rigorosamente testada, debatida e aprovada por nós dois.<br></br><br></br>
         O que ensinamos aqui não é SORTE. É o MÉTODO exato que usamos para dominar o jogo.</p>
       <br></br>
-      <SegurancaGarantida/>
-      <BonusSection/>
-      <FeedbackSection/>
+      <SegurancaGarantida />
+      <BonusSection />
+      <FeedbackSection />
       <br></br>
-      <FinalSection/>
-      <PerguntasFrequentes/>
+      <FinalSection />
+      <PerguntasFrequentes />
       <Footer></Footer>
     </>
 

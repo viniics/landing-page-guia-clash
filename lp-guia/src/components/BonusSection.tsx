@@ -13,7 +13,6 @@ interface BonusSectionProps {
 const BonusSection: React.FC<BonusSectionProps> = ({ onAnimationComplete }) => {
   return (
     <section className="flex flex-col items-center text-center px-6 py-10">
-      {/* Título BÔNUS */}
       <div className="flex justify-center">
         <BlurText
           text="BÔNUS"
@@ -21,7 +20,7 @@ const BonusSection: React.FC<BonusSectionProps> = ({ onAnimationComplete }) => {
           animateBy="words"
           direction="top"
           onAnimationComplete={onAnimationComplete}
-          className="text-9xl mb-8 text-center"
+          className="text-6xl sm:text-8xl md:text-9xl mb-8 text-center"
         />
       </div>
 

@@ -1,7 +1,7 @@
 import TiltedCard from "./TiltedCard";
 import fdb1 from "../assets/depoimentos/1.png"
 import fdb2 from "../assets/depoimentos/2.png"
-import fdb3 from "../assets/depoimentos/2.png"
+import fdb3 from "../assets/depoimentos/3.png"
 
 export default function FeedbackSection() {
   return (

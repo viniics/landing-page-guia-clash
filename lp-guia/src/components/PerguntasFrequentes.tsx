@@ -10,7 +10,7 @@ export const PerguntasFrequentes = () => {
         },
         {
             question: "Como acessar o produto?",
-            answer: `Você receberá o acesso por e-mail.\nFaça login na sua conta Hotmart`,
+            answer: `Você receberá o acesso por e-mail.\nFaça login no site da Hotmart para acessar o conteúdo.`,
             icon: File05,
         },
         {
